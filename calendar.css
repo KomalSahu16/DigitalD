@@ -1,0 +1,168 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header h2 {
+  color: #fff;
+  font-weight: 500;
+}
+
+button {
+  background: #1e1e1e;
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #333;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  background: #1e1e1e;
+  padding: 10px;
+  min-height: 80px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  transition: transform 0.15s ease-in-out;
+}
+.calendar-day:hover {
+  transform: scale(1.03);
+}
+
+.entry-indicator {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #4cafef;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 12px;
+}
+
+.entry-modal, .journal-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1f1f1f;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  color: #fff;
+}
+
+#close-modal, #close-journal {
+  float: right;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.entry-card {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  color: #000;
+}
+.entry-card:hover {
+  transform: scale(1.02);
+}
+
+.journal-content {
+  background: #fff8dc;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  font-family: 'Georgia', serif;
+  position: relative;
+}
+
+.journal-lines {
+  background: repeating-linear-gradient(
+    white, white 28px,
+    #ccc 29px
+  );
+  padding: 1rem;
+  min-height: 200px;
+  margin: 1rem 0;
+  white-space: pre-wrap;
+  line-height: 28px;
+}
+
+.journal-quote {
+  font-style: italic;
+  text-align: right;
+  font-family: 'Brush Script MT', cursive;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.journal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.journal-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.journal-actions button:first-child {
+  background: #4caf50;
+  color: white;
+}
+.journal-actions button:last-child {
+  background: #2196f3;
+  color: white;
+}
+#back-to-home{
+    padding: 10px 15px;
+    align-content: center;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: rgb(98, 208, 236);
+  margin-left: 500px;
+
+}

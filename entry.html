@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MoodDiary — New Entry</title>
+  <link rel="stylesheet" href="entry.css">
+</head>
+<body>
+  <div class="entry-wrapper">
+    <div class="entry-card">
+      <div class="top-row">
+        <div id="mood-badge" class="mood-badge">📝</div>
+        <div class="meta">
+          <div id="mood-name">Mood</div>
+          <div id="datetime"></div>
+        </div>
+      </div>
+
+      <h2>Write your day</h2>
+
+      <input id="title" type="text" placeholder="Give this day a title (e.g., 'Coffee & Sunshine')" />
+
+      <textarea id="experience" placeholder="Describe what happened today..."></textarea>
+
+      <div id="quote-section">
+        <input id="quote" type="text" placeholder="Quote (you can edit or press Generate)" />
+        <button id="generate-quote" class="btn">Generate Quote</button>
+      </div>
+
+      <div class="actions">
+        <button id="save-entry" class="btn primary">💾 Save Entry</button>
+        <a href="mood.html" class="btn link">← Change Mood</a>
+        <a href="calendar.html" class="btn link">View Past →</a>
+      </div>
+
+      <div id="toast" class="toast hidden"></div>
+    </div>
+  </div>
+  <script src="quote.js"></script>
+  <script src="entry.js"></script>
+</body>
+</html>

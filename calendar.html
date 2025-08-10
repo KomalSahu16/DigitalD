@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Past Entries - Calendar</title>
+  <link rel="stylesheet" href="calendar.css" />
+</head>
+<body>
+  <header>
+    <button id="prev-month">←</button>
+    <h2 id="month-year"></h2>
+    <button id="next-month">→</button>
+    <input type="text" id="search-input" placeholder="Search entries..." />
+    <button id="newentry">Create New Entry!!</button>
+<select id="mood-filter">
+  <option value="">All Moods</option>
+  <option value="happy">Happy</option>
+  <option value="sad">Sad</option>
+  <option value="love">Love</option>
+  <option value="relaxed">Relaxed</option>
+  <option value="surprise">Surprise</option>
+</select>
+
+  </header>
+
+  <div class="calendar-container">
+    <div class="calendar-grid" id="calendar-grid"></div>
+  </div>
+
+  <!-- Modal for day entries -->
+  <div class="entry-modal" id="entry-modal">
+    <div class="modal-content">
+      <span id="close-modal">✖</span>
+      <h3 id="modal-date"></h3>
+      <div id="entries-list"></div>
+    </div>
+  </div>
+
+  <!-- Journal view -->
+  <div class="journal-modal" id="journal-modal">
+    <div class="journal-content">
+      <span id="close-journal">✖</span>
+      <h1 id="journal-title"></h1>
+      <div class="journal-lines" id="journal-experience"></div>
+      <p class="journal-quote" id="journal-quote"></p>
+      <div class="journal-actions">
+        <button onclick="window.location.href='mood.html'">Create New Entry</button>
+        <button id="update-entry-btn">Update Entry</button>
+      </div>
+    </div>
+  </div>
+  <footer><button id="back-to-home">Back to Home</button></footer>
+  
+
+
+  <script src="calendar.js"></script>
+</body>
+</html>

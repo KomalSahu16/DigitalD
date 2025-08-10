@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mood-container {
+  text-align: center;
+}
+
+.mood-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-style: italic;
+  color: #333;
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  gap: 20px;
+}
+
+.mood-card {
+  padding: 25px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mood-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Different background colors for moods */
+.happy {
+  background: linear-gradient(135deg, #FFD54F, #FFB300);
+}
+
+.sad {
+  background: linear-gradient(135deg, #64B5F6, #1976D2);
+}
+
+.love {
+  background: linear-gradient(135deg, #F48FB1, #AD1457);
+}
+
+.surprise {
+  background: linear-gradient(135deg, #BA68C8, #8E24AA);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 700px) {
+  .mood-grid {
+    grid-template-columns: repeat(2, 150px);
+  }
+}

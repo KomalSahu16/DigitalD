@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Entry</title>
+  <link rel="stylesheet" href="pastentry.css">
+</head>
+<body>
+  <div class="journal-page">
+    <header>
+      <button onclick="window.history.back()">← Back</button>
+      <h1 id="entry-title"></h1>
+    </header>
+    <main>
+      <div class="journal-lines" id="entry-experience"></div>
+      <p class="journal-quote" id="entry-quote"></p>
+    </main>
+    <footer class="journal-actions">
+      <button onclick="window.location.href='mood.html'">Create New Entry</button>
+      <button id="update-entry-btn">Update Entry</button>
+      <button id="delete-entry-btn" style="background:#ff4d4d; color:white; border:none; padding:8px 12px; border-radius:5px; cursor:pointer;">Delete Entry</button>
+
+
+    </footer>
+  </div>
+  <div id="entry-date"></div>
+
+  <script src="pastentry.js"></script>
+</body>
+</html>

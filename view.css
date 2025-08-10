@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.entry-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.entry-card h3 {
+  margin: 0 0 5px 0;
+}
+
+.entry-card small {
+  color: gray;
+}
+.entry-card {
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  padding: 15px;
+  margin-bottom: 15px;
+  color: white; /* text visible on dark gradients */
+}
+.entry-card h3, .entry-card p, .entry-card small {
+  margin: 5px 0;
+}
+blockquote {
+  font-style: italic;
+  opacity: 0.9;
+}
+
